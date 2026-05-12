@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#8d7164",
+                        "inverse-on-surface": "#ffede6",
+                        "text-muted": "#757575",
+                        "background-alt": "#F5F5F5",
+                        "primary-container": "#ff6f00",
+                        "tertiary-fixed-dim": "#9acbff",
+                        "secondary-container": "#9df898",
+                        "surface-container": "#ffeae1",
+                        "on-tertiary-container": "#003559",
+                        "primary-light": "#FFA726",
+                        "on-secondary-fixed-variant": "#005312",
+                        "on-primary-container": "#592200",
+                        "surface": "#fff8f6",
+                        "on-surface-variant": "#594136",
+                        "tertiary-fixed": "#cfe4ff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#f7ddd2",
+                        "primary": "#9e4200",
+                        "surface-dim": "#eed5ca",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#001d34",
+                        "secondary-dark": "#2E7D32",
+                        "error-red": "#F44336",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "rating-star": "#FFC107",
+                        "inverse-surface": "#3c2d26",
+                        "surface-container-high": "#fde3d8",
+                        "on-background": "#261912",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#00629f",
+                        "secondary-fixed-dim": "#82db7e",
+                        "on-primary-fixed-variant": "#793100",
+                        "on-tertiary-fixed-variant": "#004a79",
+                        "surface-tint": "#9e4200",
+                        "primary-fixed": "#ffdbcb",
+                        "surface-bright": "#fff8f6",
+                        "primary-fixed-dim": "#ffb691",
+                        "tertiary-container": "#08a1ff",
+                        "on-secondary-fixed": "#002204",
+                        "surface-container-lowest": "#ffffff",
+                        "success-green": "#4CAF50",
+                        "primary-dark": "#E65100",
+                        "secondary-light": "#66BB6A",
+                        "outline-variant": "#e1bfb0",
+                        "on-secondary-container": "#1a7425",
+                        "secondary": "#106d20",
+                        "on-primary-fixed": "#341100",
+                        "on-surface": "#261912",
+                        "background": "#fff8f6",
+                        "text-main": "#212121",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#f7ddd2",
+                        "secondary-fixed": "#9df898",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb691",
+                        "accent-warm": "#FFC107",
+                        "surface-container-low": "#fff1eb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "grid-gap": "12px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "page-margin": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "button": ["Work Sans"],
+                        "body-sm": ["Work Sans"],
+                        "h2": ["Plus Jakarta Sans"],
+                        "label-caps": ["Work Sans"],
+                        "h3": ["Plus Jakarta Sans"],
+                        "h1": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "button": ["16px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                        "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "h2": ["20px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "label-caps": ["10px", {"lineHeight": "12px", "letterSpacing": "1px", "fontWeight": "700"}],
+                        "h3": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "h1": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #fff8f6;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- Header Section -->
+<header class="fixed top-0 left-0 w-full z-50 px-page-margin h-16 flex items-center justify-between bg-background">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">arrow_back</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 px-page-margin pb-stack-lg flex flex-col max-w-md mx-auto w-full">
+<!-- Hero Illustration / Visual Context -->
+<div class="mb-stack-lg rounded-3xl overflow-hidden shadow-sm border border-outline-variant/30">
+<img alt="Secure Verification Illustration" class="w-full h-48 object-cover" data-alt="A warm, vibrant digital illustration of a smartphone displaying a secure lock icon, surrounded by friendly geometric patterns in saffron orange and earthy green. The background is a clean, bright minimalist setting with soft, diffused sunlight, creating a trustworthy and modern atmosphere. The style is professional and high-contrast, perfectly aligning with a local marketplace aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm2mU_PtKa8h_ac95vZxT5XoTABeaoqn0L6Bu7m86BROqAvwPBVlC_PFkykbSfiMnySn2kMjnZVWbI-S2AQAoC8HOuTv8hAAcx3UrduW1J1NtY0UI5iyeCV_UIp8kB2_kX6TK1jPYt69lgA8rzW8i9ly32ss86lmEaDHLI4zcIQKvt8LpHakkiezDRcfA9x0y5zLqvkuVsSSQGhLHORpyTQ34A0SMMW1FHvc-Sr-LH5YxWOnFmY1J_pFLk8P8d-gIktoY55wzMUIw"/>
+</div>
+<!-- Typography Cluster -->
+<div class="mb-stack-lg space-y-2">
+<h1 class="font-h1 text-h1 text-on-background tracking-tight">Enter Your Phone Number</h1>
+<p class="font-body-lg text-body-lg text-text-muted">We'll send you a verification code to keep your account secure.</p>
+</div>
+<!-- Input Section -->
+<div class="space-y-stack-md">
+<div class="relative group">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1 ml-1 uppercase">Phone Number</label>
+<div class="flex items-center bg-background-alt rounded-xl border-b-2 border-outline/30 focus-within:border-primary-container transition-all overflow-hidden p-1">
+<div class="flex items-center px-4 py-3 bg-white/50 rounded-lg mr-2">
+<img alt="India Flag" class="w-6 h-4 rounded-sm object-cover mr-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eC13b-AQHPfZoo45DFhPQJlqI6-YBslsLOBW32PepBbCFfLHMKLa-td_HIG5Bg_dTewYiadOiHJBcCLvaOMdW2ZeUfPF2v9fbM-ZHYjqOvYLRdne-pGAxYbz4eNS7K55RKkmwfMNHKfLAepNsEPFl9GJCKwKVaAGQsud_8iFRw41Xqmy9kVickNlPeSIr1EePiYU2AHhGDUL9naV78kpqPtCR1R_FGgko3Akpdjlej9afQqHb94RirufwNkmANcoRG0ZwFnJH8c"/>
+<span class="font-h3 text-h3 text-on-surface">+91</span>
+</div>
+<input class="flex-grow bg-transparent border-none focus:ring-0 font-h3 text-h3 py-3 px-2 text-on-background placeholder:text-outline-variant" maxlength="10" placeholder="00000 00000" type="tel"/>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full bg-primary-container text-on-primary font-button text-button py-5 rounded-xl shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-transform hover:bg-primary-dark uppercase">
+                SEND OTP
+            </button>
+</div>
+<!-- Role Indicator / Trust Element -->
+<div class="mt-auto pt-stack-lg flex flex-col items-center">
+<div class="flex items-center gap-3 px-4 py-2 bg-surface-container-low rounded-full border border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-[18px]">storefront</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Joining as</span>
+<span class="font-body-md text-body-md font-semibold text-on-background">Halli Vendor</span>
+</div>
+<span class="material-symbols-outlined text-success-green text-[20px]" data-weight="fill">verified</span>
+</div>
+<p class="mt-stack-md font-body-sm text-body-sm text-text-muted text-center px-4">
+                By continuing, you agree to Halli Santhe's <br/>
+<span class="text-primary font-semibold">Terms of Service</span> &amp; <span class="text-primary font-semibold">Privacy Policy</span>
+</p>
+</div>
+</main>
+<!-- Visual Polish: Bottom Decorative Element -->
+<div class="fixed bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent-warm to-secondary opacity-20"></div>
+</body></html>

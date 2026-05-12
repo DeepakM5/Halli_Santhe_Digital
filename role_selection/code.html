@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halli Santhe - Role Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#8d7164",
+                        "inverse-on-surface": "#ffede6",
+                        "text-muted": "#757575",
+                        "background-alt": "#F5F5F5",
+                        "primary-container": "#ff6f00",
+                        "tertiary-fixed-dim": "#9acbff",
+                        "secondary-container": "#9df898",
+                        "surface-container": "#ffeae1",
+                        "on-tertiary-container": "#003559",
+                        "primary-light": "#FFA726",
+                        "on-secondary-fixed-variant": "#005312",
+                        "on-primary-container": "#592200",
+                        "surface": "#fff8f6",
+                        "on-surface-variant": "#594136",
+                        "tertiary-fixed": "#cfe4ff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#f7ddd2",
+                        "primary": "#9e4200",
+                        "surface-dim": "#eed5ca",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#001d34",
+                        "secondary-dark": "#2E7D32",
+                        "error-red": "#F44336",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "rating-star": "#FFC107",
+                        "inverse-surface": "#3c2d26",
+                        "surface-container-high": "#fde3d8",
+                        "on-background": "#261912",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#00629f",
+                        "secondary-fixed-dim": "#82db7e",
+                        "on-primary-fixed-variant": "#793100",
+                        "on-tertiary-fixed-variant": "#004a79",
+                        "surface-tint": "#9e4200",
+                        "primary-fixed": "#ffdbcb",
+                        "surface-bright": "#fff8f6",
+                        "primary-fixed-dim": "#ffb691",
+                        "tertiary-container": "#08a1ff",
+                        "on-secondary-fixed": "#002204",
+                        "surface-container-lowest": "#ffffff",
+                        "success-green": "#4CAF50",
+                        "primary-dark": "#E65100",
+                        "secondary-light": "#66BB6A",
+                        "outline-variant": "#e1bfb0",
+                        "on-secondary-container": "#1a7425",
+                        "secondary": "#106d20",
+                        "on-primary-fixed": "#341100",
+                        "on-surface": "#261912",
+                        "background": "#fff8f6",
+                        "text-main": "#212121",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#f7ddd2",
+                        "secondary-fixed": "#9df898",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb691",
+                        "accent-warm": "#FFC107",
+                        "surface-container-low": "#fff1eb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "grid-gap": "12px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "page-margin": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "button": ["Work Sans"],
+                        "body-sm": ["Work Sans"],
+                        "h2": ["Plus Jakarta Sans"],
+                        "label-caps": ["Work Sans"],
+                        "h3": ["Plus Jakarta Sans"],
+                        "h1": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "button": ["16px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                        "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "h2": ["20px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "label-caps": ["10px", {"lineHeight": "12px", "letterSpacing": "1px", "fontWeight": "700"}],
+                        "h3": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "h1": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .bento-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #e1bfb0 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-lg antialiased min-h-screen flex flex-col items-center">
+<!-- Hero Visual Background Section -->
+<div class="relative w-full h-[353px] md:h-[397px] overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A vibrant and bustling Indian local marketplace scene captured in soft, golden hour sunlight. The atmosphere is warm and welcoming, featuring stalls filled with fresh organic produce like bright orange carrots and deep green leafy vegetables. The image uses a shallow depth of field to focus on the textures of the produce, creating a professional and modern aesthetic that aligns with a high-end digital marketplace platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBstY3WxuCvarC8E-4YzIwF4GAywRSTk0IJsDkYu9AVrf62jqHbzYMIn2gv7l7im7ZwLnCyd12Rt5j2dkXoHHxla0D3XiTB_GrB83k1LI9jLClP8UdbTPTjScg_zJ1I0lBiEpIkzkwRfcGnB7w094cjyET_uc2CtBP4udhpbZfgz6GHelaYubjHtcsBMhM5YN23kH5MtuMBcfj1FjFfAYYgppIq71zZ9UU3eJqvYwtIz2B4nPkoI1hEgUIv8l8J5CVdu898KbMkJnw"/>
+<div class="absolute inset-0 bg-on-background/10 z-0"></div>
+</div>
+<!-- Main Content Container -->
+<main class="relative z-20 w-full max-w-lg px-page-margin -mt-20 mb-stack-lg">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-[32px] p-8 shadow-2xl border border-white/20">
+<!-- App Identity -->
+<div class="flex flex-col items-center mb-stack-lg">
+<div class="w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center shadow-lg mb-stack-md transform rotate-3">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<h1 class="font-h1 text-h1 text-primary-dark tracking-tighter mb-2">Halli Santhe</h1>
+<p class="font-body-md text-body-md text-on-surface-variant text-center px-4">
+                    Connecting local artisans and farmers directly to your neighborhood.
+                </p>
+</div>
+<!-- Welcome Message -->
+<div class="mb-stack-lg text-center">
+<h2 class="font-h2 text-h2 text-on-surface mb-1">Welcome to VendorConnect</h2>
+<div class="h-1 w-12 bg-accent-warm mx-auto rounded-full"></div>
+</div>
+<!-- Role Selection Grid -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Vendor Button -->
+<button class="group relative overflow-hidden bg-primary-container hover:bg-primary-dark active:scale-[0.98] transition-all duration-300 rounded-2xl p-6 flex items-center justify-between shadow-md">
+<div class="flex items-center gap-4">
+<div class="bg-white/20 p-3 rounded-xl">
+<span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+</div>
+<div class="text-left">
+<span class="block font-button text-white text-lg font-bold tracking-wide">🛒 VENDOR/SELLER</span>
+<span class="block font-body-sm text-body-sm text-white/80">List products &amp; grow business</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors">arrow_forward_ios</span>
+</button>
+<!-- Customer Button -->
+<button class="group relative overflow-hidden bg-secondary hover:bg-secondary-dark active:scale-[0.98] transition-all duration-300 rounded-2xl p-6 flex items-center justify-between shadow-md">
+<div class="flex items-center gap-4">
+<div class="bg-white/20 p-3 rounded-xl">
+<span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+</div>
+<div class="text-left">
+<span class="block font-button text-white text-lg font-bold tracking-wide">🛍️ CUSTOMER</span>
+<span class="block font-body-sm text-body-sm text-white/80">Buy fresh &amp; local goods</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors">arrow_forward_ios</span>
+</button>
+</div>
+<!-- Footer Meta -->
+<div class="mt-stack-lg flex flex-col items-center gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant/60">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-body-sm text-body-sm">Secure &amp; Local Infrastructure</span>
+</div>
+<div class="flex items-center justify-center gap-6 w-full pt-6 border-t border-surface-variant">
+<div class="text-center">
+<span class="block font-h3 text-primary-dark">500+</span>
+<span class="block font-label-caps text-label-caps text-text-muted">VENDORS</span>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant"></div>
+<div class="text-center">
+<span class="block font-h3 text-secondary">20k+</span>
+<span class="block font-label-caps text-label-caps text-text-muted">ITEMS sold</span>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant"></div>
+<div class="text-center">
+<span class="block font-h3 text-tertiary">15+</span>
+<span class="block font-label-caps text-label-caps text-text-muted">DISTRICTS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Navigation/Links -->
+<div class="mt-8 text-center flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-1 font-body-md" href="#">
+<span>Already have an account?</span>
+<span class="font-bold underline">Login</span>
+</a>
+<div class="flex items-center justify-center gap-4 text-outline font-label-caps tracking-[2px]">
+<a class="hover:text-primary transition-colors" href="#">PRIVACY</a>
+<span class="w-1 h-1 bg-outline rounded-full"></span>
+<a class="hover:text-primary transition-colors" href="#">TERMS</a>
+<span class="w-1 h-1 bg-outline rounded-full"></span>
+<a class="hover:text-primary transition-colors" href="#">HELP</a>
+</div>
+</div>
+</main>
+<!-- Subtle Texture Overlay -->
+<div class="fixed inset-0 pointer-events-none bento-pattern opacity-10 z-0"></div>
+</body></html>
